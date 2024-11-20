@@ -1,0 +1,199 @@
+.heading{
+    position: absolute;
+    left:700px;
+    top:50px;
+    font-size:40px;
+    z-index:10;
+    display: block;
+}
+.container {
+    // position : relative;
+    // width : 100%;
+    // padding : 30px;  
+    gap:20px;
+    height:fit-content;
+    box-shadow: none;
+    position:absolute;
+    left:90px;
+    top:10px;
+    right:0px;
+    padding:30px;
+    // padding-left: 100px;
+    margin-left: 25px;
+    margin-right: 15px;
+    // height: 500vh;
+    // height:fit-content;
+    width:91vw;
+    background-color: transparent;
+    border:1px solid transparent;
+    border-radius:20px;
+    overflow: hidden;
+    border:2px solid black;
+    background-color: white;
+    display : flex;
+    align-items : center;
+    flex-wrap : wrap;
+    justify-content: space-evenly;
+  }
+  .card__img {
+    visibility: hidden;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 235px;
+    border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+    
+  }
+  .card__info-hover {
+    position: absolute;
+    padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  position: absolute;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+top: 0;
+  
+}
+.pcard {
+    width:350px;
+  margin-right: 25px;
+  margin-top: 120px;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+    // width: 33.3%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.pcard:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
+}
+
+.card__info {
+z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+   padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  color: #868686;
+}
+
+.card__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card__by {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.card__author {
+    font-weight: 600;
+    font-size:20px;
+    text-decoration: none;
+    padding:20px;
+    padding-left: 10px;
+    color: blue;
+}
+
+.pcard:hover .card__img--hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.pcard:hover .card__info {
+    background-color: transparent;
+    position: relative;
+}
+
+.pcard:hover .card__info-hover {
+    opacity: 1;
+}
+.likepost{
+  position: absolute;
+  right:40px;
+  bottom:40px; 
+  cursor:pointer;
+  font-size: 40px;
+}
+
+.likecount{
+  position:absolute;
+  right:15px;
+  font-size:30px;
+  bottom:40px;
+  color:white;
+
+}
+.fullscreen{
+  position:fixed;
+  top:0px;
+  left:105px;
+  height: 100vh;
+  width:92vw;
+  background-color:black;
+  backdrop-filter: blur(10px);
+  display:flex;
+  justify-content:center;
+  border:2px solid transparent;
+  border-radius:10px;
+  overflow:hidden;
+  display: none;
+  transition:all ease 2s;
+  z-index:200;
+  p{
+    color: white;
+    position: absolute;
+    bottom:20px;
+    font-size:20px;
+    background-color: black;
+    padding:30px;
+
+  }
+}
+.fullscreen::after{
+  position:absolute;
+  content:"";
+  height:6px;
+  width:100%;
+  background-color:white;
+  left:0;
+  top:0;
+  transform-origin:left center;
+  animation:lefttoright 5s infinite;
+  transition:animation linear 2s;
+}
+@keyframes lefttoright{
+  0%{
+      transform: scaleX(0);
+  }    
+}
+.fullscreen img{
+  object-fit:cover;
+}

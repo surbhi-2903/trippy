@@ -1,0 +1,114 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    margin:80px 50px 20px 50px;
+    background-image: url('');
+}
+footer .col h4{
+    margin:20px 0px;
+}
+footer .col i{
+    margin:0px 10px;
+    font-size:25px;
+}
+footer .col i:nth-child(1){
+    margin-left: 0;
+}
+footer .col p{
+    margin-bottom:5px;;
+}
+footer .col1{
+    /* margin-left:-100px; */
+    margin-top:40px;
+}
+footer .install-sec h6{
+    color:black;
+    font-weight:400;
+    margin-top:15px;
+    font-size:15px;
+}
+footer .install-sec{
+    position:relative;
+    /* left:-50px; */
+    margin-top:40px;
+}
+footer .install-sec #btn{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+button{
+    height:60px;
+    opacity:1;
+    width:180px;
+    padding:20px;
+    position:relative;
+    margin:5px;
+    cursor:pointer;
+    h6{
+        font-size:10px;
+        display: block;
+    }
+    h4{
+        font-size:15px;
+    }
+}
+// footer .install-sec #btn .button{
+//     height:60px;
+//     opacity:1;
+//     width:180px;
+//     padding:20px;
+//     position:relative;
+//     margin:5px;
+//     cursor:pointer;
+// }
+footer .install-sec #btn .button div h6{
+    font-size:10px;
+    display: block;
+}
+footer .install-sec #btn .button h4{
+    font-size:15px;
+}
+footer .install-sec #btn .button:nth-child(1){
+    margin-left:0px;
+    background-color:transparent;
+    border: 2px solid #088178 ;
+    border-radius:5px;
+}
+footer .install-sec #btn .button:nth-child(1) div{
+    position:absolute;
+    left:60px;
+    bottom:12px; 
+    line-height:10px;
+}
+footer .install-sec #btn .button:nth-child(1) i{
+    font-size:30px;
+    position:absolute;
+    left:30px;
+    bottom:12px;
+}
+footer .install-sec #btn .button:nth-child(2){
+    margin-left:0px;
+    background-color:transparent;
+    border: 2px solid #088178 ;
+    border-radius:5px;
+}
+footer .install-sec #btn .button:nth-child(2) div{
+    position:absolute;
+    left:60px;
+    bottom:12px; 
+    line-height:10px;
+}
+footer .install-sec #btn .button:nth-child(2) i{
+    font-size:30px;
+    position:absolute;
+    left:30px;
+    bottom:12px;
+}
+footer .install-sec #btn .button:nth-child(1):hover{
+    border:2px solid #12d7ca;
+}
+footer .install-sec #btn .button:nth-child(2):hover{
+    border:2px solid #12d7ca;
+}

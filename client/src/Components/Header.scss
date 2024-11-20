@@ -1,0 +1,45 @@
+.headerdiv{
+    height:400px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .headervideo{
+        height: 400px;
+        width: 100%;
+        opacity: 0.6;
+    }
+    .headertext1{
+        color:white;
+        font-family: 'AR One Sans', sans-serif;
+        font-size: 50px;
+        position: absolute;
+        left:30px;
+        top:280px;
+        font-weight: 900;
+        position: relative;
+       animation: all 0.1s ease-in-out;
+       animation:popout 1s linear forwards;
+    }
+    @keyframes popout{
+        0%{
+            transform:translateX(500px);
+            opacity:0;
+        }
+        100%{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+    .headertext1::after{
+        content: "";
+        display: block;
+        border-top: 4px solid #000; /* Adjust the border style, width, and color as needed */
+        width: 50%; /* Set the width to match the container width */
+        position: absolute;
+        top:50px;
+        // bottom: 10px;
+        left: 0;
+    }
+   
+}
